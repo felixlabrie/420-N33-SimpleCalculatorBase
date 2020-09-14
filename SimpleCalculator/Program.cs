@@ -47,7 +47,8 @@ namespace SimpleCalculator
                     if (isDigit)
                         break;
                 }
- 
+
+                Console.WriteLine("Enter your desired operation out of the following: add or +, subtract or -, divide or /, multiply or * and power or ^ :"); 
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
