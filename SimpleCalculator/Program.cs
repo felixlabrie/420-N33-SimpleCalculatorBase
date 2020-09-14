@@ -20,8 +20,34 @@ namespace SimpleCalculator
                 //Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                bool isDigit = false;
+                double firstNumber = 0;
+                double secondNumber = 0;
+
+                while (!isDigit)
+                {
+                    
+                    Console.WriteLine("Enter your first number: ");
+                    string sRes = Console.ReadLine();
+                    
+                    isDigit = Double.TryParse(sRes, out firstNumber);
+
+                    if (isDigit)
+                        break;
+                }
+                isDigit = false;
+                while (!isDigit)
+                {
+
+                    Console.WriteLine("Enter your second number: ");
+                    string sRes = Console.ReadLine();
+
+                    isDigit = Double.TryParse(sRes, out secondNumber);
+
+                    if (isDigit)
+                        break;
+                }
+ 
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
