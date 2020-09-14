@@ -26,6 +26,10 @@ namespace SimpleCalculator
                 case "/":
                     result = argFirstNumber / argSecondNumber;
                     break;
+                case "power":
+                case "^":
+                    result = Math.Pow(argFirstNumber, argSecondNumber);
+                    break;
                 default:
                     throw new InvalidOperationException("Specified operation is not recognized.");
             }
