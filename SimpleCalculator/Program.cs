@@ -62,7 +62,7 @@ namespace SimpleCalculator
                                 || (operation == "multiply") || (operation == "*") || (operation == "divide") || (operation == "/")
                                 || (operation == "power") || (operation == "^"));
 
-                    if (isDigit)
+                    if (isOperation)
                         break;
                 }
                 Console.WriteLine("Enter your desired operation out of the following: add or +, subtract or -, divide or /, multiply or * and power or ^ :"); 
