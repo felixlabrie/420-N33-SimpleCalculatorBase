@@ -65,7 +65,7 @@ namespace SimpleCalculator
                     case "+":
                         sb.Append(" plus ");
                         break;
-                    case "subtact":
+                    case "subtract":
                     case "-":
                         sb.Append(" minus ");
                         break;
