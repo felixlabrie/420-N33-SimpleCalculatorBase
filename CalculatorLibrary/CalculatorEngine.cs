@@ -4,11 +4,11 @@ namespace SimpleCalculator
 {
     public class CalculatorEngine
     {
-        public double Calculate (string argOperation, double argFirstNumber, double argSecondNumber)
+        public double Calculate(string argOperation, double argFirstNumber, double argSecondNumber)
         {
             double result;
 
-            switch(argOperation.ToLower())
+            switch (argOperation.ToLower())
             {
                 case "add":
                 case "+":
