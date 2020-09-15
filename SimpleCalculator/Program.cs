@@ -69,10 +69,21 @@ namespace SimpleCalculator
                     case "-":
                         sb.Append(" minus ");
                         break;
-                    
-                    
+                    case "multiply":
+                    case "*":
+                        sb.Append(" times ");
+                        break;
+                    case "division":
+                    case "/":
+                        sb.Append(" divided by ");
+                        break;
+                    case "power":
+                    case "^":
+                        sb.Append(" to the power of ");
+                        break;
+
                 }
-                sb.Append("and your second number ");
+                sb.Append("your second number ");
                 sb.Append(secondNumber);
                 sb.Append(" equals to ");
                 sb.Append(result);
