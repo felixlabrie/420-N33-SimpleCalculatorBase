@@ -90,6 +90,8 @@ namespace SimpleCalculator
 
                 Console.WriteLine(sb.ToString());
                 Console.ReadLine();
+
+                System.IO.File.WriteAllText(@"C:\Users\Public\Documents\CalcResult.txt", sb.ToString());
              
 
             } catch (Exception ex)
