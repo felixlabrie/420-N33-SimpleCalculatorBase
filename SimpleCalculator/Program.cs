@@ -50,8 +50,24 @@ namespace SimpleCalculator
                         break;
                 }
 
+                bool isOperation = false;
+                string operation = " ";
+                while (!isOperation)
+                {
+
+                    Console.WriteLine("Enter your desired operation out of the following: add or +, subtract or -, divide or /, multiply or * and power or ^ :");
+                    operation = Console.ReadLine().ToLower();
+
+                    isOperation = ((operation == "add") || (operation == "+") || (operation == "subtract") || (operation == "-")
+                                || (operation == "multiply") || (operation == "*") || (operation == "divide") || (operation == "/")
+                                || (operation == "power") || (operation == "^"));
+
+                    if (isDigit)
+                        break;
+                }
                 Console.WriteLine("Enter your desired operation out of the following: add or +, subtract or -, divide or /, multiply or * and power or ^ :"); 
-                string operation = Console.ReadLine().ToLower();
+                operation = Console.ReadLine().ToLower();
+                
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
