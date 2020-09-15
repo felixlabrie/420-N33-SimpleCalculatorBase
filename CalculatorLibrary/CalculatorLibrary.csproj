@@ -44,11 +44,5 @@
     <Compile Include="CalculatorEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleCalculator\SimpleCalculator.csproj">
-      <Project>{5b1e5e51-a8d6-4a82-8344-831c86cc2468}</Project>
-      <Name>SimpleCalculator</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
